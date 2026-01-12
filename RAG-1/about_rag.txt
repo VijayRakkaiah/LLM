@@ -1,0 +1,96 @@
+RAG Practice Guide: AI, ML, GenAI & Emerging Technologies
+________________________________________
+1. Introduction to AI, ML, and GenAI
+Artificial Intelligence (AI) focuses on building systems capable of performing tasks that typically require human intelligence, such as reasoning, perception, and decision-making.
+Machine Learning (ML) is a subset of AI where models learn patterns from data instead of being explicitly programmed. ML techniques include supervised learning, unsupervised learning, and reinforcement learning.
+Generative AI (GenAI) is an advanced branch of ML that enables systems to generate new content such as text, images, audio, video, and code. Large Language Models (LLMs) are a key example of GenAI.
+________________________________________
+2. What is Retrieval-Augmented Generation (RAG)?
+Retrieval-Augmented Generation (RAG) is an AI architecture that combines information retrieval with language generation.
+Instead of relying only on the model’s internal knowledge, RAG retrieves relevant information from external data sources and injects it into the prompt. This helps:
+•	Reduce hallucinations
+•	Provide up-to-date information
+•	Improve factual accuracy
+•	Enable source-based answers
+________________________________________
+3. Core Components of a RAG System
+A typical RAG system includes the following components:
+1.	Data Sources – PDFs, documents, databases, APIs, web data
+2.	Data Preprocessing – cleaning and normalization
+3.	Chunking – splitting large documents into smaller pieces
+4.	Embedding Model – converts text into vector representations
+5.	Vector Database – stores and searches embeddings
+6.	Retriever – fetches the most relevant chunks
+7.	Generator (LLM) – produces the final response using retrieved context
+________________________________________
+4. Embeddings and Vector Databases
+Embeddings are numerical representations of text that capture semantic meaning. Similar concepts produce similar vectors.
+Popular embedding models:
+•	OpenAI embeddings
+•	Sentence Transformers
+•	Cohere embeddings
+Common vector databases:
+•	FAISS
+•	Pinecone
+•	Weaviate
+•	Chroma
+•	Milvus
+Key considerations:
+•	Chunk size
+•	Overlap strategy
+•	Distance metrics (cosine, dot product, L2)
+________________________________________
+5. End-to-End RAG Workflow
+1.	Collect and ingest documents
+2.	Clean and normalize text
+3.	Split text into chunks
+4.	Generate embeddings for each chunk
+5.	Store embeddings in a vector database
+6.	Receive user query
+7.	Embed the query
+8.	Retrieve top-k relevant chunks
+9.	Pass retrieved context to the LLM
+10.	Generate a grounded response
+________________________________________
+6. Evaluation and Optimization of RAG Systems
+Important evaluation metrics:
+•	Relevance
+•	Faithfulness (groundedness)
+•	Latency
+•	Cost
+Optimization techniques:
+•	Better chunking strategies
+•	Hybrid search (keyword + vector)
+•	Reranking models
+•	Prompt engineering
+•	Context window management
+________________________________________
+7. RAG vs Fine-Tuning
+Aspect	RAG	Fine-Tuning
+Knowledge updates	External	Internal
+Cost	Lower	Higher
+Maintenance	Easy	Complex
+Transparency	High	Low
+Best for	Dynamic data	Style & behavior
+RAG is generally preferred when knowledge changes frequently.
+________________________________________
+8. Emerging Technologies Related to RAG
+•	Multimodal RAG (text, image, audio, video)
+•	Agentic AI systems
+•	Tool-augmented LLMs
+•	Knowledge Graph + RAG
+•	On-device AI
+•	Privacy-preserving AI
+•	Self-evaluating and self-correcting RAG systems
+________________________________________
+9. Practical RAG Practice Ideas
+•	Build a chatbot over PDFs or internal documents
+•	Add citations and source references
+•	Implement hybrid search with reranking
+•	Compare different embedding models
+•	Reduce hallucinations with strict grounding
+•	Create a domain-specific RAG (finance, healthcare, legal)
+________________________________________
+10. Conclusion
+Retrieval-Augmented Generation is a powerful technique that enhances Generative AI with reliable and up-to-date knowledge. It is a critical skill for building scalable, production-ready AI applications. Mastering RAG will help you design systems that are accurate, trustworthy, and enterprise-ready.
+
